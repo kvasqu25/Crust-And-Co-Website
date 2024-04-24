@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Great food brings people together.">
+    <link rel="icon" href="photos/logo.png" type="image/png">
+    <title>Crust & Co.</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <h1 class="title">Crust And Co.</h1>
+    
+    <div id="theme-btn" class="btnMode">Dark Mode</div>
+
+    <div class="top">
+      <img class="main-picture" src="photos/mainphoto.avif" alt="description">
+    </div>
+
+    <nav class="menu-buttons">
+      <button id="btnBurgers">GOURMET BURGERS</button>
+      <button id="btnEntrees">ENTRÉES</button>
+      <button id="btnPizza">PIZZA</button>
+      <button id="btnTodo">ALL OUR MENU</button>  
+    </nav>
+
+    <div>
+        <p id="main-description">
+            Welcome to Crust and Co, where every dish is crafted with passion and precision to tantalize your taste buds. <br> <br> At Crust and Co, we believe that great food brings people together. Whether you're dining in with friends and family or grabbing a quick bite on the go, our warm and inviting atmosphere, attentive service, and exceptional cuisine ensure an unforgettable dining experience. Join us today and experience the perfect blend of flavor, quality, and hospitality at Crust and Co. </p>
+    </div>
+
+<!--MENU-->
+
+    <ul id="list" class="menu">
+      <li data-categoria="burgers">
+        <img src="photos/GOURMETCHEESEBURGER.webp" alt="Gourmet Cheeseburger">
+        <div class="product-info">
+            <h3>CRUST AND CO GOURMET CHEESEBURGER</h3>
+            <p>Pickle relish, onion, pickles, lettuce, tomato, mayo and your choice of cheese.</p>
+        </div>    
+      </li>
+
+      <li data-categoria="burgers">
+        <img src="photos/AVOCADOBURGER.jpeg" alt="Avocado Burger">
+        <div class="product-info">
+            <h3>SMASHED AVOCADO 'N BACON</h3>
+            <p>Freshly-smashed avocado, hardwood-smoked bacon, melty Swiss, onion, lettuce, tomato and mayo.</p>
+        </div> 
+      </li>
+
+      <li data-categoria="burgers">
+        <img src="photos/MONSTERBURGER.webp" alt="Monster Burger">
+        <div class="product-info">
+            <h3>MONSTER</h3>
+            <p>What is better than one juicy patty? Two! Grilled with your choice of cheese, onion, pickle relish, pickles, lettuce, tomato and mayo.</p>
+        </div> 
+      </li>
+
+      <li data-categoria="entrees">
+        <img src="photos/CHICKENALFREDO.webp" alt="            <p>Creamy alfredo sauce made from scratch with ingredients like parmesan, cream, garlic and butter, served with fettuccine pasta and topped with sliced grilled chicken. </p>
+        ">
+        <div class="product-info">
+            <h3>Chicken Alfredo </h3>
+            <p>Creamy alfredo sauce made from scratch with ingredients like parmesan, cream, garlic and butter, served with fettuccine pasta and topped with sliced grilled chicken. </p>
+        </div> 
+      </li>
+
+      <li data-categoria="entrees">
+        <img src="photos/CHICKENPARMESANO.webp" alt="Two lightly fried parmesan-breaded chicken breasts with our homemade marinara and melted Italian cheeses. Served with a side of spaghetti. ">
+        <div class="product-info">
+            <h3>Chicken Parmigiana </h3>
+            <p>Two lightly fried parmesan-breaded chicken breasts with our homemade marinara and melted Italian cheeses. Served with a side of spaghetti.</p>
+        </div> 
+      </li>
+
+      <li data-categoria="entrees">
+        <img src="photos/lasagna.webp" alt="Prepared fresh daily with layers of pasta, parmesan, mozzarella, pecorino romano and our homemade meat sauce.">
+        <div class="product-info">
+            <h3>Lasagna Classico </h3>
+            <p>Prepared fresh daily with layers of pasta, parmesan, mozzarella, pecorino romano and our homemade meat sauce.</p>
+        </div> 
+      </li>
+
+      <li data-categoria="pizza">
+        <img src="photos/MEATPIZZA" alt="description">
+        <div class="product-info">
+            <h3>Meat Lovers</h3>
+            <p>Tomato sauce, mozzarella, sliced meatballs, bacon, pepperoni, italian sausage.  </p>
+        </div> 
+      </li>
+
+      <li data-categoria="pizza">
+        <img src="photos/HAMPIZZA" alt="description">
+        <div class="product-info">
+            <h3>Ham and Cheese</h3>
+            <p>Ham, provolone cheese, tomatoes, red onions and mayo. Served on Italian white or rustic wheat roll.</p>
+        </div> 
+      </li>
+
+      <li data-categoria="pizza">
+        <img src="photos/PEPERONIPIZZA" alt="description">
+        <div class="product-info">
+            <h3>Pepperoni Magnifico  </h3>
+            <p>Classic pepperoni, old world pepperoni, our signature sauce and three-cheese blend, with romesan seasoning on our original crust.</p>
+        </div> 
+      </li>
+
+    </ul>
+    <select id="options" class="options"></select>
+    <button id="orderDone" class="done"></button>
+
+<!--FORM-->
+
+    <div class="form">
+      <h1>Sign Up for Deals!</h1>
+      <form id="order">
+        <div class="form-group">
+            <label for="firstName">First Name:</label>
+            <input type="text" id="firstName" name="firstName" required>
+        </div>
+        <div class="form-group">
+            <label for="lastName">Last Name:</label>
+            <input type="text" id="lastName" name="lastName" required>
+        </div>
+        <div class="form-group">
+            <label for="phone">Phone Number:</label>
+            <input type="tel" id="phone" name="phone" autocomplete="tel">
+        </div>
+        <div class="form-group">
+            <label for="email">Email Address:</label>
+            <input type="email" id="email" name="email" autocomplete="email">
+        </div>        
+        <div class="form-group">
+            <label for="contactPhone">Contact Preference:</label><br>
+            <input type="radio" id="contactPhone" name="contactPreference" value="phone" checked>
+            <label for="contactPhone">Phone</label>
+            <input type="radio" id="contactEmail" name="contactPreference" value="email">
+            <label for="contactEmail">Email</label>
+        </div>        
+        <div class="form-group">
+            <label for="comments">Comments:</label>
+            <textarea id="comments" name="comments" required></textarea>
+        </div>
+        <button type="submit">Submit</button>
+      </form>
+      <div id="message" class="hidden">
+      </div>
+
+<!--GAME-->
+
+        <div class="game">
+        <h2>GUESS THE RIGHT NUMBER AND WIN A COUPON!</h2>
+            <p>Guess and enter a number between 1 and 10:</p>
+            <input type="number" id="guessInput" min="1" max="10">
+            <button onclick="checkGame()">Enter</button>
+            <p id="guessResult"></p>
+        </div>
+    </div>
+
+<!--FOOTER-->
+    <footer>
+        &copy; 2024 Crust and Co. 
+    </footer>
+    <script src="script.js" defer></script>
+  </body>
+</html>

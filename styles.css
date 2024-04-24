@@ -1,0 +1,272 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #F8F4ED;
+  }
+  
+.title {
+    position: absolute;
+    font-size: 10vw;
+    border: 2px solid white;
+    padding: 10px;
+    color: white;
+    text-align: center;
+    font-weight: bold;
+    background-color: rgba(0, 0, 0, 0);
+    box-sizing: border-box;
+    right: initial;
+  }  
+  
+
+.main-picture {
+    border-radius: 0;
+  }
+
+#main-description {
+    font-family: 'Roboto', sans-serif; 
+    font-size: 18px;
+    color: black; 
+    border: 2px solid #5e0606;
+    padding: 10px;
+    border-radius: 10px; 
+
+    }
+
+/*MENU*/
+button {
+    border: none;
+    background-color: #5e0606;
+    cursor: pointer;
+    border-radius: 0px;
+    color: white;
+    font-size: 3vw;
+    padding-bottom: 20px;
+    padding-top: 20px;
+    margin-left: 5px;
+    margin-right: 5px;
+    font-weight: bold;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  }
+  
+button:hover {
+    background-color: black;
+  }
+  
+.menu-buttons {
+    margin-left: 0;
+    text-align: center;
+    background-color:#8a0000
+
+  }
+  
+img {
+    width: 100%;
+    height: auto;
+  }
+  
+/*//////FORM///////*/
+
+.order {
+    border: none;
+    width: 100%;
+  }
+  
+.form {
+    border: 2px solid #ccc;
+    width: 50%;
+    border-radius: 10px;
+    text-align: center;
+    transform: translate(50%, 10%);
+    margin-bottom: 10%;
+  }
+.form button{
+    background-color: #5e0606;
+    padding: 10px;
+}
+.form-group {
+    margin-bottom: 15px;
+}
+h3 {
+    font-size: 2vw;
+    margin-bottom: 3%;
+  }
+  
+label {
+    margin-bottom: 5%;
+    font-weight: bold;
+  }
+
+  input[type="text"],
+  input[type="tel"],
+  input[type="email"],
+  textarea {
+      width: 50%;
+      padding: 8px;
+      border: 1px solid #ccc;
+  }
+  .options {
+    pointer-events: none;
+    opacity: 0; 
+    
+ }
+.done {
+    display: none;
+}
+
+.hidden {
+    display: none;
+}
+
+.error {
+    color: red;
+}
+
+
+/*MENU LIST*/
+.menu {
+    list-style: none;
+  }
+  
+ul {
+    display: flex;
+    flex-wrap:wrap;
+    justify-content: space-between;
+    margin-right: 2%;
+  }
+  
+li {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: 30%;
+    margin-bottom: 10px;
+    padding: 20px;
+    box-sizing: border-box; 
+  }
+  
+img {
+    border-radius: 30px;
+    width: 100%;
+    height: auto;
+  }
+
+h3, p {
+    margin-top: 5px;
+}
+  
+ /*////SCREEN SIZE/////*/
+  
+  @media screen and (min-width: 1280px) {
+    .title {
+      transform: translate(9%, 150%);
+    }
+  
+    ul {
+      flex-direction: row;
+      align-items: center;
+      margin-right: 10%;
+    }
+  
+    li {
+      width: 50%;
+    }
+  
+    .form {
+      width: 70%;
+      transform: translate(20%, 10%);
+    }
+  
+    h3 {
+      font-size: 25px;
+    }
+  
+  }
+
+@media screen and (max-width: 768px) {
+    .title {
+      transform: translate(5%, 100%);
+    }
+  
+    ul {
+      margin-right: 5%;
+    }
+  
+    li {
+      width: 100%;
+    }
+  
+    .form {
+      width: 90%;
+      transform: translate(5%, 0%);
+    }
+  
+    h3 {
+      font-size: 18px;
+    }
+  }
+
+
+/*///// DARK MODE BUTTON//// */
+  #theme-btn {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    background-color: #F8F4ED;
+    color: black;
+    border: none;
+    padding: 5px 10px;
+    font-size: small;
+    cursor: pointer;
+  }
+  
+  #theme-btn:hover {
+    background-color: black;
+    color: white;
+  }
+
+.menu-buttons {
+  transition: color 0.3s ease;
+}
+
+/*///// DARK MODE STYLES//// */
+
+.dark-mode {
+  background-color: black;
+}
+
+.dark-mode h3 {
+  color: white;
+}
+.dark-mode .form{
+    color: white;
+}
+
+.dark-mode li{
+    color: white;
+}
+.dark-mode ul{
+    color: white;
+}
+.dark-mode #main-description{
+    color: white;
+}
+
+
+/*/////GAME //// */
+
+#guessResult {
+    font-weight: bold;
+    text-align: center;
+    margin-top: 20px;
+}
+
+/*/////FOOTER /////*/
+footer{
+
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+
+}
