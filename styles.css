@@ -1,235 +1,250 @@
+/* General Styles */
 body {
-    margin: 0;
-    padding: 0;
-    background-color: #F8F4ED;
-  }
-  
+  margin: 0;
+  padding: 0;
+  background-color: #F8F4ED;
+  font-family: 'Roboto', sans-serif;
+}
+
+/* Title */
 .title {
-    position: absolute;
-    font-size: 10vw;
-    border: 2px solid white;
-    padding: 10px;
-    color: white;
-    text-align: center;
-    font-weight: bold;
-    background-color: rgba(0, 0, 0, 0);
-    box-sizing: border-box;
-    right: initial;
-  }  
-  
+  position: absolute;
+  font-size: 10vw;
+  border: 2px solid white;
+  padding: 10px;
+  color: white;
+  text-align: center;
+  font-weight: bold;
+  background-color: transparent;
+  box-sizing: border-box;
+}
 
+/* Main Image */
 .main-picture {
-    border-radius: 0;
-  }
+  border-radius: 0;
+  width: 100%;
+  height: auto;
+}
 
+/* Description */
 #main-description {
-    font-family: 'Roboto', sans-serif; 
-    font-size: 18px;
-    color: black; 
-    border: 2px solid #5e0606;
-    padding: 10px;
-    border-radius: 10px; 
+  font-size: 18px;
+  color: black;
+  border: 2px solid #5e0606;
+  padding: 10px;
+  border-radius: 10px;
+  text-align: center;
+}
 
-    }
-
-/*MENU*/
+/* Buttons */
 button {
-    border: none;
-    background-color: #5e0606;
-    cursor: pointer;
-    border-radius: 0px;
-    color: white;
-    font-size: 3vw;
-    padding-bottom: 20px;
-    padding-top: 20px;
-    margin-left: 5px;
-    margin-right: 5px;
-    font-weight: bold;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-  }
-  
+  border: none;
+  background-color: #5e0606;
+  cursor: pointer;
+  border-radius: 5px;
+  color: white;
+  font-size: 3vw;
+  padding: 15px;
+  margin: 5px;
+  font-weight: bold;
+}
+
 button:hover {
-    background-color: black;
-  }
-  
+  background-color: black;
+}
+
 .menu-buttons {
-    margin-left: 0;
-    text-align: center;
-    background-color:#8a0000
+  text-align: center;
+  background-color: #8a0000;
+  padding: 10px 0;
+}
 
-  }
-  
-img {
-    width: 100%;
-    height: auto;
-  }
-  
-/*//////FORM///////*/
-
-.order {
-    border: none;
-    width: 100%;
-  }
-  
+/* Form */
 .form {
-    border: 2px solid #ccc;
-    width: 50%;
-    border-radius: 10px;
-    text-align: center;
-    transform: translate(50%, 10%);
-    margin-bottom: 10%;
-  }
-.form button{
-    background-color: #5e0606;
-    padding: 10px;
+  width: 70%; /* Adjust width for better balance */
+  max-width: 500px; /* Set a max width to avoid it becoming too wide on large screens */
+  padding: 30px;
+  background-color: #f9f9f9;
+  border-radius: 15px;
+  border: 2px solid #ccc;
+  text-align: center;
+  margin: 0 auto; /* Center the form */
+  box-sizing: border-box;
 }
-.form-group {
-    margin-bottom: 15px;
+
+.form h3 {
+  font-size: 2vw;
+  margin-bottom: 20px; /* Add margin for spacing */
+  color: #5e0606; /* Bold red color for the title */
+  font-weight: bold;
+  text-transform: uppercase;
 }
-h3 {
-    font-size: 2vw;
-    margin-bottom: 3%;
-  }
-  
+
 label {
-    margin-bottom: 5%;
-    font-weight: bold;
-  }
-
-  input[type="text"],
-  input[type="tel"],
-  input[type="email"],
-  textarea {
-      width: 50%;
-      padding: 8px;
-      border: 1px solid #ccc;
-  }
-  .options {
-    pointer-events: none;
-    opacity: 0; 
-    
- }
-.done {
-    display: none;
+  margin-bottom: 10px;
+  font-weight: bold;
+  color: #333;
+  font-size: 1.1vw; /* Larger text for better readability */
 }
 
-.hidden {
-    display: none;
+input[type="text"],
+input[type="tel"],
+input[type="email"],
+textarea {
+  width: 100%; /* Full width input fields for better alignment */
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  margin-bottom: 20px;
+  font-size: 1.1vw;
+  box-sizing: border-box; /* Ensure padding doesn’t increase the width */
+  transition: all 0.3s ease;
+}
+
+input[type="text"]:focus,
+input[type="tel"]:focus,
+input[type="email"]:focus,
+textarea:focus {
+  border: 2px solid #5e0606; /* Red border on focus */
+  background-color: #fff5f5; /* Light background on focus */
+}
+
+#game button {
+  background-color: #5e0606;
+  color: white;
+  font-size: 1.5vw;
+  padding: 12px 25px;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  margin-top: 20px;
+  display: block;
+  width: 100%; /* Button takes up full width */
+  max-width: 200px; /* Set max width for button */
+  margin-left: auto;
+  margin-right: auto;
+}
+
+button:hover {
+  background-color: #8a0000; /* Darker red on hover */
+  transform: scale(1.05); /* Slight zoom effect */
+}
+
+button:active {
+  transform: scale(0.98); /* Button shrinking effect */
 }
 
 .error {
-    color: red;
+  color: red;
+  font-size: 1.2vw;
+  margin-top: 10px;
+}
+
+.options {
+  pointer-events: none;
+  opacity: 0;
+}
+
+.done {
+  display: none;
+}
+
+.hidden {
+  display: none;
 }
 
 
-/*MENU LIST*/
+/* Menu List */
 .menu {
-    list-style: none;
-  }
-  
-ul {
-    display: flex;
-    flex-wrap:wrap;
-    justify-content: space-between;
-    margin-right: 2%;
-  }
-  
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
 li {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    width: 30%;
-    margin-bottom: 10px;
-    padding: 20px;
-    box-sizing: border-box; 
-  }
-  
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  width: 30%;
+  margin-bottom: 10px;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
 img {
-    border-radius: 30px;
-    width: 100%;
-    height: auto;
+  border-radius: 30px;
+  width: 100%;
+  height: auto;
+}
+#list img {
+  transition: transform 0.3s ease; /* Smooth transition for scaling */
+}
+
+#list img:hover {
+  transform: scale(1.05); /* Increase size by 5% on hover */
+}
+
+
+/* Responsive Design */
+@media screen and (min-width: 1280px) {
+  .title {
+      transform: translate(9%, 150%);
   }
 
-h3, p {
-    margin-top: 5px;
-}
-  
- /*////SCREEN SIZE/////*/
-  
-  @media screen and (min-width: 1280px) {
-    .title {
-      transform: translate(9%, 150%);
-    }
-  
-    ul {
-      flex-direction: row;
-      align-items: center;
-      margin-right: 10%;
-    }
-  
-    li {
-      width: 50%;
-    }
-  
-    .form {
+  .form {
       width: 70%;
-      transform: translate(20%, 10%);
-    }
-  
-    h3 {
-      font-size: 25px;
-    }
-  
   }
+}
 
 @media screen and (max-width: 768px) {
-    .title {
+  .title {
       transform: translate(5%, 100%);
-    }
-  
-    ul {
-      margin-right: 5%;
-    }
-  
-    li {
+  }
+
+  li {
       width: 100%;
-    }
-  
-    .form {
+  }
+
+  .form {
       width: 90%;
-      transform: translate(5%, 0%);
-    }
-  
-    h3 {
+  }
+
+  h3 {
       font-size: 18px;
-    }
   }
-
-
-/*///// DARK MODE BUTTON//// */
-  #theme-btn {
-    position: fixed;
-    top: 20px;
-    right: 20px;
-    background-color: #F8F4ED;
-    color: black;
-    border: none;
-    padding: 5px 10px;
-    font-size: small;
-    cursor: pointer;
-  }
-  
-  #theme-btn:hover {
-    background-color: black;
-    color: white;
-  }
-
-.menu-buttons {
-  transition: color 0.3s ease;
 }
 
-/*///// DARK MODE STYLES//// */
+/* Dark Mode */
+#theme-btn {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  background-color: #F8F4ED;
+  color: black;
+  border: none;
+  padding: 5px 10px;
+  font-size: small;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+#theme-btn:hover {
+  background-color: black;
+  color: white;
+}
+
+.dark-mode {
+  background-color: black;
+  color: white;
+}
+
+.dark-mode h3, .dark-mode li, .dark-mode ul, .dark-mode #main-description {
+  color: white;
+}
 
 .dark-mode {
   background-color: black;
@@ -238,35 +253,29 @@ h3, p {
 .dark-mode h3 {
   color: white;
 }
-.dark-mode .form{
-    color: white;
+
+.dark-mode .form {
+  color: white;
+  background-color: #333;  /* Set a darker background for the form in dark mode */
 }
 
-.dark-mode li{
-    color: white;
-}
-.dark-mode ul{
-    color: white;
-}
-.dark-mode #main-description{
-    color: white;
+.dark-mode li {
+  color: white;
 }
 
-
-/*/////GAME //// */
-
-#guessResult {
-    font-weight: bold;
-    text-align: center;
-    margin-top: 20px;
+.dark-mode ul {
+  color: white;
 }
 
-/*/////FOOTER /////*/
-footer{
+.dark-mode #main-description {
+  color: white;
+}
 
-    background-color: #333;
-    color: #fff;
-    padding: 20px;
-    text-align: center;
 
+/* Footer */
+footer {
+  background-color: #333;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
 }
